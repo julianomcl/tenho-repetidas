@@ -64,3 +64,4 @@ group :production do
 end
 
 gem 'bootstrap-generators', '~> 3.3.4'
+gem 'puma'
