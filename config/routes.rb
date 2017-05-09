@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get  '/cadastro', to: 'users#new'
   post '/cadastro',  to: 'users#create'
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
