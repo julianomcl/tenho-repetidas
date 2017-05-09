@@ -4,11 +4,12 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
   
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.where(activated: FILL_IN).paginate(page: params[:page])
   end
   
   def show
     @user = User.find(params[:id])
+    redirect_to root_url and return unless FILL_IN
   end
   
   def new
@@ -18,9 +19,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      flash[:success] = "Bem-vindo ao Tenho Repetidas! Divirta-se trocando suas figurinhas!"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = "Por favor, verifique seu e-mail para ativar a conta."
+      redirect_to root_url
     else
       render 'new'
     end
