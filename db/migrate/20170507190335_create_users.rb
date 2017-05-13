@@ -9,7 +9,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string  :facebook
       t.string  :twitter
       t.string  :telegram
-      t.string  :skype
       t.timestamps null: false
     end
   end

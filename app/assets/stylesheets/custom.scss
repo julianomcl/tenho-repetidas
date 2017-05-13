@@ -230,6 +230,21 @@ input {
   text-align: center;
 }
 
+.user-name{
+  text-align: center;
+}
+
+.user-name > h1{
+  margin-bottom: 0px;
+}
+
+.user-name > a {
+  color: #333;
+}
+
+.user-name > a > i {
+  margin-bottom: 30px;
+}
 
 .wrapper{
   margin: 0 auto;
@@ -275,7 +290,12 @@ input {
   font-weight: bold;
 }
 
-
-.cell-right {
-
+.row-social{
+  text-align: center;
 }
+
+.row-social > a {
+  margin-left: 20px;
+  color: #333;
+}
+
