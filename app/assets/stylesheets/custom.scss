@@ -141,10 +141,6 @@ aside {
   margin-right: 10px;
 }
 
-.gravatar_edit {
-  margin-top: 15px;
-}
-
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -207,4 +203,29 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+
+/* Gravatar Profile */
+
+.gravatar_edit, .container_user_info {
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.gravatar_edit > img, .container_user_info > img{
+  display: block;
+  margin: 0 auto;
+  float: none;
+  border-radius:50%;
+}
+
+.gravatar_edit > a {
+  display: block;
+  text-align: center;
+}
+
+.user_info {
+  margin: 0 auto;
+  text-align: center;
 }

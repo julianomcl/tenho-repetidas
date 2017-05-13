@@ -13,5 +13,26 @@
   <%= f.label :password_confirmation, 'Confirmação de senha' %>
   <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+  <%= f.label :birthday, 'Nascimento' %>
+  <%= f.date_field :birthday, class: 'form-control' %>
+
+  <%= f.label :address, 'Endereço' %>
+  <%= f.text_field :address, class: 'form-control' %>
+
+  <%= f.label :mobile, 'Celular' %>
+  <%= f.text_field :mobile, class: 'form-control' %>
+
+  <%= f.label :facebook, 'Facebook' %>
+  <%= f.text_field :facebook, class: 'form-control' %>
+
+  <%= f.label :twitter, 'Twitter' %>
+  <%= f.text_field :twitter, class: 'form-control' %>
+
+  <%= f.label :telegram, 'Telegram' %>
+  <%= f.text_field :telegram, class: 'form-control' %>
+
+  <%= f.label :skype, 'Skype' %>
+  <%= f.text_field :skype, class: 'form-control' %>
+
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>

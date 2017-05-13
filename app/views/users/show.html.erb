@@ -1,11 +1,42 @@
 <% provide(:title, @user.name) %>
 <div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
+    <section class="col-md-12 container_user_info">
         <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
+        <h1> <%= @user.name %> </h1>
     </section>
-  </aside>
+</div>
+
+<div class="container_user_info">
+    <div class="row user_info" >
+        <div class="col-md-1">E-mail: </div>
+        <div class="col-md-9"><%= @user.email %></div>
+    </div>
+    <div class="row user_info">
+        <div class="col-md-1">Nascimento: </div>
+        <div class="col-md-9"><%= @user.birthday %></div>
+    </div>
+    <div class="row user_info">
+        <div class="col-md-1">Endereço: </div>
+        <div class="col-md-9"><%= @user.address %></div>
+    </div>
+    <div class="row user_info">
+        <div class="col-md-1">Celular </div>
+        <div class="col-md-9"><%= @user.mobile %></div>
+    </div>
+    <div class="row user_info">
+        <div class="col-md-1">Facebook</div>
+        <div class="col-md-9"><%= @user.facebook %></div>
+    </div>
+    <div class="row user_info">
+        <div class="col-md-1">Twitter </div>
+        <div class="col-md-9"><%= @user.twitter %></div>
+    </div>
+    <div class="row user_info">
+        <div class="col-md-1">Telegram: </div>
+        <div class="col-md-9"><%= @user.telegram %></div>
+    </div>
+    <div class="row user_info">
+        <div class="col-md-1">Skype: </div>
+        <div class="col-md-9"><%= @user.skype %></div>
+    </div>
 </div>
