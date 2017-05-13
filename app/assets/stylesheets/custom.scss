@@ -229,3 +229,53 @@ input {
   margin: 0 auto;
   text-align: center;
 }
+
+
+.wrapper{
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.table{
+  width: 100%;
+  display: table;
+  @media screen and (max-width: 580px){
+      display: block;}
+}
+.table-row{
+  display: table-row;
+  background: transparent;
+  &:nth-of-type(odd){
+      background: transparent}
+  &.header{
+      font-weight: 900;
+      color: #ffffff;
+      background: #ea6153;}
+  &.green{
+      background: #27ae60;}
+  &.blue{
+      background: #2980b9;}
+  @media screen and (max-width: 580px){
+      padding: 8px 0;
+      display: block;}
+}
+
+.cell-left, .cell-right{
+  padding: 6px 12px;
+  @media screen and (max-width: 580px){
+      padding: 2px 12px;
+      display: block;};
+
+  letter-spacing: 0.7px;
+}
+
+.cell-left {
+  text-align: right;
+  font-weight: bold;
+}
+
+
+.cell-right {
+
+}

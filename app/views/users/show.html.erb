@@ -6,37 +6,36 @@
     </section>
 </div>
 
-<div class="container_user_info">
-    <div class="row user_info" >
-        <div class="col-md-1">E-mail: </div>
-        <div class="col-md-9"><%= @user.email %></div>
-    </div>
-    <div class="row user_info">
-        <div class="col-md-1">Nascimento: </div>
-        <div class="col-md-9"><%= @user.birthday %></div>
-    </div>
-    <div class="row user_info">
-        <div class="col-md-1">Endereço: </div>
-        <div class="col-md-9"><%= @user.address %></div>
-    </div>
-    <div class="row user_info">
-        <div class="col-md-1">Celular </div>
-        <div class="col-md-9"><%= @user.mobile %></div>
-    </div>
-    <div class="row user_info">
-        <div class="col-md-1">Facebook</div>
-        <div class="col-md-9"><%= @user.facebook %></div>
-    </div>
-    <div class="row user_info">
-        <div class="col-md-1">Twitter </div>
-        <div class="col-md-9"><%= @user.twitter %></div>
-    </div>
-    <div class="row user_info">
-        <div class="col-md-1">Telegram: </div>
-        <div class="col-md-9"><%= @user.telegram %></div>
-    </div>
-    <div class="row user_info">
-        <div class="col-md-1">Skype: </div>
-        <div class="col-md-9"><%= @user.skype %></div>
+<div class="row">
+    <div class="table">
+        <div class="table-row">
+          <div class="cell-left col-md-6">Endereço: </div>
+          <div class="cell-right col-md-6"><%= @user.address %></div>
+        </div>
+
+        <div class="table-row">
+          <div class="cell-left col-md-6">Celular:</div>
+          <div class="cell-right col-md-6"><%= @user.mobile %></div>
+        </div>
+
+        <div class="table-row">
+          <div class="cell-left col-md-6">Facebook:</div>
+          <div class="cell-right col-md-6"><%= @user.facebook %></div>
+        </div>
+
+        <div class="table-row">
+          <div class="cell-left col-md-6">Twitter:</div>
+          <div class="cell-right col-md-6"><%= @user.twitter %></div>
+        </div>
+
+        <div class="table-row">
+          <div class="cell-left col-md-6">Telegram:</div>
+          <div class="cell-right col-md-6"><%= @user.telegram %></div>
+        </div>
+
+        <div class="table-row">
+          <div class="cell-left col-md-6">Skype:</div>
+          <div class="cell-right col-md-6"><%= @user.skype %></div>
+        </div>
     </div>
 </div>
