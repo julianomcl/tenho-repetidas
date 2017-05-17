@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20170509150448) do
     t.string   "twitter"
     t.string   "telegram"
     t.string   "skype"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.string   "password_digest"
     t.string   "remember_digest"
     t.boolean  "admin",             default: false

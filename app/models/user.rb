@@ -36,12 +36,6 @@ class User < ActiveRecord::Base
         update_attribute(:remember_digest, User.digest(remember_token))
     end
 
-    # Returns true if the given token matches the digest.
-    def authenticated?(remember_token)
-        return false if remember_digest.nil?
-        BCrypt::Password.new(remember_digest).is_password?(remember_token)
-    end
-
     # Forgets a user.
     def forget
         update_attribute(:remember_digest, nil)
@@ -49,7 +43,8 @@ class User < ActiveRecord::Base
 
     # Activates an account.
     def activate
-        update_columns(activated: FILL_IN, activated_at: FILL_IN)
+        update_attribute(:activated,    true)
+        update_attribute(:activated_at, Time.zone.now)
     end
 
     # Sends activation email.
