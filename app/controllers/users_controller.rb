@@ -8,8 +8,12 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
-    redirect_to root_url and return unless @user.nil?
+    begin
+      @user = User.find(params[:id])
+      redirect_to root_url and return unless !@user.nil?
+    rescue
+      redirect_to root_url and return
+    end
   end
 
   def new
