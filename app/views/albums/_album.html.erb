@@ -1,0 +1,8 @@
+<li>
+  <%= link_to album.name, album %>
+
+  <% if current_user.admin? %>
+    | <%= link_to "editar", edit_album_path(album) %>
+    | <%= link_to "deletar", album, method: :delete, data: { confirm: "Tem certeza? Isto pode afetar a coleção de diversos colecionadores." } %>
+  <% end %>
+</li>

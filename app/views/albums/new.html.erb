@@ -1,0 +1,23 @@
+<% provide(:title, 'Novo Álbum') %>
+<h1>Novo Álbum</h1>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <%= form_for(@album, url: albums_path) do |f| %>
+            <%#= render 'shared/error_messages' %>
+            <%= f.label :name, "Nome" %>
+            <%= f.text_field :name, class: 'form-control' %>
+
+            <%= f.label :editor, "Editora" %>
+            <%= f.text_field :editor, class: 'form-control' %>
+
+            <%= f.label :total, "Total de Figurinhas" %>
+            <%= f.text_field :total, class: 'form-control' %>
+
+            <%= f.label :description, "Descrição" %>
+            <%= f.text_area :description, class: 'form-control' %>
+
+            <%= f.submit "Salvar", class: "btn btn-primary" %>
+        <% end %>
+    </div>
+</div>

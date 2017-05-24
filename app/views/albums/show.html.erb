@@ -1,0 +1,29 @@
+<% provide(:title, @album.name) %>
+<div class="row">
+    <section class="col-md-12 container_album_info">
+        <div class="col-md-12">
+            <% unless @album.image.nil? %>
+                <%= image_tag(@album.image) %>
+            <% end %>
+        </div>
+        <div class="album-name">
+            <h1><%= @album.name %></h1>
+        </div>
+
+    </section>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        Editora: <%= @album.editor %>
+    </div>
+    <div class="col-md-12">
+        Total de figurinhas: <%= @album.total %>
+    </div>
+    <div class="col-md-12">
+        Descrição: <%= @album.description %>
+    </div>
+    <div class="col-md-12">
+        <li><%= link_to "Adicionar à minha coleção",   '#' %></li>
+    </div>
+</div>

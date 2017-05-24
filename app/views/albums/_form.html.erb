@@ -1,0 +1,17 @@
+<%= form_for(@album) do |f| %>
+  <%#= render 'shared/error_messages', object: @album %>
+
+  <%= f.label :name, 'Nome' %>
+  <%= f.text_field :name, class: 'form-control' %>
+
+  <%= f.label :editor, 'Editora' %>
+  <%= f.text_field :editor, class: 'form-control' %>
+
+  <%= f.label :total, 'Total de Figurinhas' %>
+  <%= f.text_field :total, class: 'form-control' %>
+
+  <%= f.label :description, 'Descrição' %>
+  <%= f.text_area :description, class: 'form-control' %>
+  
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
