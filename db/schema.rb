@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 20170524052022) do
     t.string   "facebook"
     t.string   "twitter"
     t.string   "telegram"
-    t.string   "skype"
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
     t.string   "password_digest"

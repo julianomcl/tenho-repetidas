@@ -215,7 +215,7 @@ input {
     display: block;
     margin: 0 auto;
     float: none;
-    border-radius:50%;  
+    border-radius:50%;
   }
   & > a {
     display: block;
@@ -291,4 +291,15 @@ input {
     margin-left: 20px;
     color: #333;
   }
+}
+
+ul.navbar-nav#location > li {
+  color: #9d9d9d;
+  padding-top: 10px;
+  // padding-bottom: 15px;
+}
+
+ul.navbar-nav#location > li#user_address {
+  margin-left: 15px;
+  margin-top: 5px;
 }
