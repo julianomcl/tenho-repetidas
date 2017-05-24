@@ -5,7 +5,7 @@ Um website para encontrar pessoas próximas para troca de figurinhas repetidas.
 ## Proposta
 
 Construir um website para encontro de colecionadores para troca de figurinhas sendo os principais recursos:
-* "match" de colecionadores que podem trocar figurinhas repetidas
+* "match" de colecionadores que podem trocar figurinhas repetidas baseado na localização.
 * encontro de colecionadores para troca por proximidade de localização
 
 ## Instalação
