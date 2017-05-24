@@ -18,7 +18,7 @@
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function(position) {
-    $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?',
+    $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?',
       { latlng: position.coords.latitude+","+position.coords.longitude},
       function(data) {
           var address_components = data.results[0].address_components;
