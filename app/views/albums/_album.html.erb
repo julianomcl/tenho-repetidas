@@ -5,4 +5,7 @@
     | <%= link_to "editar", edit_album_path(album) %>
     | <%= link_to "deletar", album, method: :delete, data: { confirm: "Tem certeza? Isto pode afetar a coleção de diversos colecionadores." } %>
   <% end %>
+  <% if current_user.albums.find_by_id(album.id).nil? %>
+    | <%= link_to "adicionar", add_album_user_path(album) %>
+  <% end %>  
 </li>

@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'albums/new'
+  get 'albums/add/:id' => 'albums#add_album_user', as: :add_album_user
+  get 'albums/my' => 'albums#my_albums', as: :my_albums
+  
 
   get 'password_resets/new'
 

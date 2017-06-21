@@ -42,6 +42,18 @@ class AlbumsController < ApplicationController
     end
   end
   
+  def add_album_user
+    album = Album.find(params[:id])
+    album.users << current_user
+    album.save!
+    flash[:success] = "Álbum adicionado a coleção"
+    redirect_to albums_url
+  end
+  
+  def my_albums
+    @albums = current_user.albums.paginate(page: params[:page])
+  end
+  
   def destroy
     Album.find(params[:id]).destroy
     flash[:success] = "Álbum deletado"

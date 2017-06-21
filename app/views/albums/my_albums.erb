@@ -1,0 +1,10 @@
+<% provide(:title, 'Meus Álbums') %>
+<h1>Meus álbums</h1>
+
+<%= will_paginate %>
+
+<ul class="albums">
+  <%= render @albums %>
+</ul>
+
+<%= will_paginate %>
