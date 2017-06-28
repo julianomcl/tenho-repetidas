@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20170620193516) do
     t.index ["user_id"], name: "index_albums_users_on_user_id"
   end
   
-  create_table "fig_repetidas", force: :cascade do |t|
+  create_table "fig_repetidas"
     t.integer "album_id"
     t.integer "user_id"
     t.index ["album_id"], name: "index_fig_repetidas_on_album_id"
