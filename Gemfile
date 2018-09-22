@@ -54,7 +54,7 @@ end
 group :test do
   gem 'factory_girl_rails'
   gem 'capybara'
-  gem 'guard-rspec'
+  gem 'guard-rspec', '>= 4.7.3'
   gem 'poltergeist'
   gem 'database_cleaner'
 end
