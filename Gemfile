@@ -6,16 +6,16 @@ gem 'rails', '5.0.2' #'4.2.5'
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '3.3.6'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -39,23 +39,23 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.3', '>= 2.3.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.0'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
 
 group :test do
-  gem 'factory_girl_rails'
-  gem 'capybara'
+  gem 'factory_girl_rails', '>= 4.8.0'
+  gem 'capybara', '>= 2.14.0'
   gem 'guard-rspec', '>= 4.7.3'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.15.0'
   gem 'database_cleaner'
 end
 
@@ -71,6 +71,6 @@ gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # gem "bower-rails", "~> 0.11.0"
 # gem 'bootstrap-sass'
-gem "font-awesome-rails"
+gem "font-awesome-rails", ">= 4.7.0.2"
 
 gem 'carrierwave', '~> 1.0'
