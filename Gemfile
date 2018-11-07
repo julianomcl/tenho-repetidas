@@ -53,7 +53,7 @@ end
 
 group :test do
   gem 'factory_girl_rails', '>= 4.8.0'
-  gem 'capybara', '>= 2.14.0'
+  gem 'capybara'
   gem 'guard-rspec', '>= 4.7.3'
   gem 'poltergeist', '>= 1.15.0'
   gem 'database_cleaner'
