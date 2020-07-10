@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.7.1' #'4.2.5'
 
+gem "actionpack", ">= 5.2.4.3"
+gem "activesupport", ">= 5.2.4.3"
+gem "actionview", ">= 5.2.4.3"
+
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '3.4.1'
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
@@ -66,7 +70,7 @@ end
 
 # gem 'bootstrap'
 gem 'bootstrap-generators', '~> 3.3.4'
-gem 'puma'
+gem "puma", ">= 3.12.6"
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # gem "bower-rails", "~> 0.11.0"
