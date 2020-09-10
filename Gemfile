@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.7.1' #'4.2.5'
+gem 'rails', '5.2.4.4' #'4.2.5'
 
 gem "actionpack", ">= 5.2.4.3"
 gem "activesupport", ">= 5.2.4.3"
@@ -14,7 +14,7 @@ gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.1'
+gem 'coffee-rails', '~> 4.2.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -75,6 +75,6 @@ gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # gem "bower-rails", "~> 0.11.0"
 # gem 'bootstrap-sass'
-gem "font-awesome-rails", ">= 4.7.0.4"
+gem "font-awesome-rails", ">= 4.7.0.5"
 
 gem 'carrierwave', '~> 1.0'
