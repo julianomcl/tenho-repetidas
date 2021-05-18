@@ -57,7 +57,7 @@ end
 
 group :test do
   gem 'factory_girl_rails', '>= 4.9.0'
-  gem 'capybara', '>= 3.10.1'
+  gem 'capybara', '>= 3.32.2'
   gem 'guard-rspec', '>= 4.7.3'
   gem 'poltergeist', '>= 1.18.1'
   gem 'database_cleaner'
@@ -75,6 +75,6 @@ gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # gem "bower-rails", "~> 0.11.0"
 # gem 'bootstrap-sass'
-gem "font-awesome-rails", ">= 4.7.0.4"
+gem "font-awesome-rails", ">= 4.7.0.5"
 
 gem 'carrierwave', '~> 1.0'
