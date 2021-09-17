@@ -77,4 +77,4 @@ gem 'bootstrap-will_paginate', '0.0.10'
 # gem 'bootstrap-sass'
 gem "font-awesome-rails", ">= 4.7.0.5"
 
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
