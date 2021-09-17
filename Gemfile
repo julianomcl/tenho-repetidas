@@ -4,9 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '6.0.3.5' #'4.2.5'
 
-gem "actionpack", ">= 5.2.4.3"
+gem "actionpack", ">= 5.2.4.6"
 gem "activesupport", ">= 5.2.4.3"
-gem "actionview", ">= 5.2.4.3"
+gem "actionview", ">= 5.2.4.4"
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '3.4.1'
@@ -57,7 +57,7 @@ end
 
 group :test do
   gem 'factory_girl_rails', '>= 4.9.0'
-  gem 'capybara', '>= 3.32.2'
+  gem 'capybara', '>= 3.10.1'
   gem 'guard-rspec', '>= 4.7.3'
   gem 'poltergeist', '>= 1.18.1'
   gem 'database_cleaner'
