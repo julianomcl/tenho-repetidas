@@ -6,11 +6,11 @@ gem 'rails', '5.2.4.6' #'4.2.5'
 
 gem "actionpack", ">= 5.2.4.6"
 gem "activesupport", ">= 5.2.4.3"
-gem "actionview", ">= 5.2.4.4"
+gem "actionview", ">= 5.2.4.6"
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '3.4.1'
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.1', '>= 5.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -57,7 +57,7 @@ end
 
 group :test do
   gem 'factory_girl_rails', '>= 4.9.0'
-  gem 'capybara', '>= 3.10.1'
+  gem 'capybara', '>= 3.32.2'
   gem 'guard-rspec', '>= 4.7.3'
   gem 'poltergeist', '>= 1.18.1'
   gem 'database_cleaner'
