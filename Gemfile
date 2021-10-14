@@ -70,7 +70,7 @@ end
 
 # gem 'bootstrap'
 gem 'bootstrap-generators', '~> 3.3.4'
-gem "puma", ">= 3.12.6"
+gem "puma", ">= 4.3.9"
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # gem "bower-rails", "~> 0.11.0"
