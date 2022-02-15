@@ -2,15 +2,15 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.4.6' #'4.2.5'
+gem 'rails', '5.2.6.2' #'4.2.5'
 
-gem "actionpack", ">= 5.2.4.6"
+gem "actionpack", ">= 5.2.6.2"
 gem "activesupport", ">= 5.2.4.3"
 gem "actionview", ">= 5.2.4.4"
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '3.4.1'
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.1', '>= 5.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -70,7 +70,7 @@ end
 
 # gem 'bootstrap'
 gem 'bootstrap-generators', '~> 3.3.4'
-gem "puma", ">= 3.12.6"
+gem "puma", ">= 4.3.11"
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # gem "bower-rails", "~> 0.11.0"
