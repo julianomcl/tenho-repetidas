@@ -6,7 +6,7 @@ gem 'rails', '5.2.6.2' #'4.2.5'
 
 gem "actionpack", ">= 5.2.6.2"
 gem "activesupport", ">= 5.2.4.3"
-gem "actionview", ">= 5.2.4.4"
+gem "actionview", ">= 5.2.6.2"
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '3.4.1'
@@ -75,6 +75,6 @@ gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # gem "bower-rails", "~> 0.11.0"
 # gem 'bootstrap-sass'
-gem "font-awesome-rails", ">= 4.7.0.5"
+gem "font-awesome-rails", ">= 4.7.0.8"
 
 gem 'carrierwave', '~> 1.0'
