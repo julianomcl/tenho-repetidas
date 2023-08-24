@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '7.0.3' #'4.2.5'
+gem 'rails', '7.0.7.1' #'4.2.5'
 
-gem "actionpack", ">= 5.2.6.2"
-gem "activesupport", ">= 5.2.4.3"
-gem "actionview", ">= 5.2.4.4"
+gem "actionpack", ">= 7.0.7.1"
+gem "activesupport", ">= 7.0.7.1"
+gem "actionview", ">= 7.0.7.1"
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '3.4.1'
@@ -14,12 +14,12 @@ gem 'sass-rails', '~> 6.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2.2'
+gem 'coffee-rails', '~> 5.0.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.4.0'
+gem 'jquery-rails', '>= 4.5.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -50,7 +50,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '>= 3.6.1'
+  gem 'rspec-rails', '>= 3.7.0'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
@@ -77,4 +77,4 @@ gem 'bootstrap-will_paginate', '0.0.10'
 # gem 'bootstrap-sass'
 gem "font-awesome-rails", ">= 4.7.0.5"
 
-gem 'carrierwave', '~> 2.2'
+gem 'carrierwave', '~> 2.2', '>= 2.2.3'
