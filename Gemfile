@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '7.0.3' #'4.2.5'
+gem 'rails', '7.0.8.5' #'4.2.5'
 
-gem "actionpack", ">= 5.2.6.2"
+gem "actionpack", ">= 7.0.8.5"
 gem "activesupport", ">= 5.2.4.3"
 gem "actionview", ">= 5.2.4.4"
 
