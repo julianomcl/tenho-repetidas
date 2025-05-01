@@ -50,7 +50,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '>= 3.6.1'
+  gem 'rspec-rails', '>= 8.0.0'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
